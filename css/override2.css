@@ -2,7 +2,7 @@
 Override CSS rules. Better use SASS(SCSS)
 */
 html, body {
-    font-family: Roboto;
+    font-family: Roboto !important;
 }
 nav.top-bar,
 nav.tab-bar,
@@ -13,9 +13,32 @@ nav.tab-bar,
 #gridics-menu{
     z-index: 9999 !important;
 }
+div.sticky nav{
+    height: 56px;
+}
+
+div.sticky nav > ul.title-area{
+    margin-right: 70px;
+    
+}
+
+nav.top-bar > ul.title-area > li.name h1{
+    line-height: 56px;
+}
+
 nav.top-bar.hide-for-medium-down > section.top-bar-section > ul > li,
 nav.top-bar.hide-for-medium-down > section.top-bar-section > ul > li > a{
     background: transparent;
+    font-weight: 800;
+}
+nav.top-bar.hide-for-medium-down > section.top-bar-section > ul > li > a{
+    line-height: 56px;
+}
+nav.top-bar.hide-for-medium-down > section.top-bar-section > ul > li{
+    line-height: 56px; 
+}
+ul.right > li > a{
+    text-transform: uppercase;
 }
 
 .menu > li > a{
