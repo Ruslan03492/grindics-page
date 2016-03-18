@@ -210,7 +210,7 @@ footer.top-bar > ul.menu.top-bar-right > li > a{
         padding: 25px;    
     }
     .writecall > div:last-child{
-        padding-left: 0px;
+        /*padding-left: 0px;*/
         border-left: none;
     }
     .callout.bottom > div > div:first-child:not(:last-child) {
