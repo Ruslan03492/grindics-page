@@ -1,0 +1,237 @@
+/*
+Override CSS rules. Better use SASS(SCSS)
+*/
+html, body {
+    font-family: Roboto;
+}
+.title-bar{
+    background-color: #41703a !important;
+    padding: 0 !important;
+}
+#gridics-menu{
+    z-index: 9999 !important;
+}
+.menu > li > a{
+    color: #fff !important;
+    font-size: 0.9rem;
+}
+.menu > li > a:hover{
+    color: #41703a !important;
+    background-color: #fff !important;
+}
+li.menu-text > a:hover{
+    color: transparent !important;
+    background-color: transparent !important;
+}
+.title-bar-right{
+    text-transform: uppercase;
+}
+.menu-text {
+    padding: 0 !important;
+}
+.callout.top{
+    height: 174px;
+    overflow: hidden;
+    background-color: #41703a;
+    background-image: url(../img/main_bg.jpg);
+}
+
+.callout.top > div > div > h1{
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 144px;
+}
+
+.input-group{
+    width: 100%;
+    margin-top: 3rem;
+    height: 74px;
+    border: 2px solid #fff;
+    border-radius: 6px !important;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1rem;
+    height: 2.4375rem;
+    
+}
+
+input[type='search']{
+    background-color: transparent;
+    border:none ;
+    outline: none;
+    -webkit-appearance: none;
+    color: #0a0a0a;    
+    transition: box-shadow 0.5s ease 0s, border-color 0.25s ease-in-out 0s;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    width: 44px; 
+    height: 44px;
+    border: none;
+    background-color: transparent;
+    border:none ;
+    outline: none;
+    -webkit-appearance: none;
+    background: url(../img/iconsearch.png) no-repeat 50% 50%; 
+}
+
+.breadcrumbs li:not(:last-child)::after{
+    content: "|" !important;
+    color: #799ac3 !important;
+}
+
+.withleftnavigation{
+    background-color: #f2f2f2;
+    margin-top: 75px;
+    padding: 30px 20px;
+    border: 2px solid #ccc;
+}
+
+.withleftnavigation > ul > li:not(:last-of-type){
+    padding-bottom: 30px;   
+}
+.withleftnavigation > ul > li{
+    font-weight: bolder; 
+}
+.faq {
+   margin-top: 77px; 
+}
+.faq > h2 {
+   margin-bottom: 40px; 
+}
+.p-in-faq{
+    line-height: 78px;
+    border-top: 1px solid #ccc;
+    margin-bottom: 0;
+    text-indent: 30px;
+}
+
+.p-in-faq:last-child{
+    border-bottom: 1px solid #ccc;
+}
+
+.writecall{
+    margin: 80px auto 75px;
+    border: 1px solid #959595;
+    padding: 45px;    
+}
+
+.writecall > div > h3{
+    color: #41703a;
+}
+
+.writecall > div:last-child{
+    padding-left: 40px;
+    border-left: 1px solid #959595;
+}
+span.telnumber{
+    font-weight: bolder;
+    text-decoration-line: underline;
+}
+.callout.bottom{
+    height: 174px;
+    overflow: hidden;
+    background-color: #41703a;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.callout.bottom > div > div{
+    height: 100%;
+}
+.callout.bottom > div > div > p:first-child{
+   color: #fff;
+   font-size: 2rem;
+   margin-bottom: 0;
+}
+
+.callout.bottom > div > div > p:last-child{
+   color: #fff;
+   font-size: 1.4rem;
+   margin-bottom: 0;
+}
+
+.callout.bottom > div > div > p:last-child > span{
+    color: #f3e721;
+}
+
+.callout.bottom > div{
+    height: 100%;
+}
+.callout.bottom > div > div:first-child:not(:last-child){
+    padding: 50px 0 0 160px;
+}
+.callout.bottom > div > div:last-child{
+    background: url(../img/peoplesicon.jpg) no-repeat 50% bottom;
+    height: 100%;
+}
+footer.top-bar{
+    padding: 0;
+}
+
+footer.top-bar > ul.menu.top-bar-right > li > a{
+    color: #4d4d4d !important;
+}
+/*Less property for small screen*/
+@media screen and (max-width: 39.9375em) {
+       .callout.top > div > div > h1{
+        line-height: 1rem;
+    } 
+    .input-group{
+        margin-top: 1rem;
+    }
+    .callout.top{
+        background-image: none;
+        height: auto;
+    }
+    .withleftnavigation{
+        margin-top: 0;
+    }
+    .faq{
+        margin-top: 10px;
+    }
+    .faq > h2 {
+        margin-bottom: 5px;
+    }
+    .p-in-faq{
+        line-height: 2rem;
+    }
+
+    .p-in-faq:last-child{
+        border-bottom: none;
+    }
+    .writecall{
+        margin: 20px auto 20px;
+        border: 1px solid #959595;
+        padding: 25px;    
+    }
+    .writecall > div:last-child{
+        padding-left: 0px;
+        border-left: none;
+    }
+    .callout.bottom > div > div:first-child:not(:last-child) {
+        padding: 0;
+    }
+    .callout.bottom > div > div > p:first-child{
+        font-size: 1rem;
+    }
+    .callout.bottom {
+        background-color: #41703a;
+        height: auto;
+        margin-bottom: 0;
+        overflow: hidden;
+        padding: 0;
+    }    
+}
+@media screen and (max-width: 1024px){
+    #gridics-menu > div > .menu > li{
+        display: inline-block !important;
+    }
+    .callout.bottom > div > div:first-child:not(:last-child) {
+        padding:0 0 0 20px;
+    }
+}
